@@ -1,0 +1,50 @@
+title:            Daniel Lipovetsky 
+tagline:          Up to date
+description:      Describe your website.
+share-enabled:    false
+#Comment out url when working locally to resolve base urls correctly
+#url: http://users.soe.ucsc.edu/~danl
+
+# Owner/author information
+owner:
+  name:           Daniel Lipovetsky
+  email:          danl@soe.ucsc.edu 
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about
+  - title: Research
+    url: /research
+  - title: CV
+    url: /lipovetsky.pdf
+#  - title: Github
+#    url: https://github.com/gatoruso
+#    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Los_Angeles
+future:      true
+pygments:    true
+markdown:    kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
